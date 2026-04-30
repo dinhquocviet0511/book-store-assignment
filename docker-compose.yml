@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: bookhaven-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: bookhaven
+      POSTGRES_PASSWORD: bookhaven
+      POSTGRES_DB: bookhaven
+    ports:
+      - "5433:5432"
+    volumes:
+      - bookhaven-postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U bookhaven -d bookhaven"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  bookhaven-postgres-data:

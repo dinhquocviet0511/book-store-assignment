@@ -1,0 +1,92 @@
+[
+  {
+    "id": "book-001",
+    "sku": "BHV-001",
+    "title": "The Pragmatic Programmer",
+    "author": "David Thomas and Andrew Hunt",
+    "description": "A practical guide to writing better software through clear thinking, careful habits, and steady improvement.",
+    "priceCents": 4599,
+    "coverImageUrl": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "book-002",
+    "sku": "BHV-002",
+    "title": "Clean Architecture",
+    "author": "Robert C. Martin",
+    "description": "Principles for organizing software systems so they stay testable, maintainable, and adaptable.",
+    "priceCents": 4199,
+    "coverImageUrl": "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "book-003",
+    "sku": "BHV-003",
+    "title": "Designing Data-Intensive Applications",
+    "author": "Martin Kleppmann",
+    "description": "A deep look at storage engines, distributed systems, stream processing, and reliable data architecture.",
+    "priceCents": 5299,
+    "coverImageUrl": "https://images.unsplash.com/photo-1526243741027-444d633d7365?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "book-004",
+    "sku": "BHV-004",
+    "title": "Refactoring",
+    "author": "Martin Fowler",
+    "description": "Cataloged techniques for improving internal code structure without changing observable behavior.",
+    "priceCents": 4899,
+    "coverImageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "book-005",
+    "sku": "BHV-005",
+    "title": "You Don't Know JS Yet",
+    "author": "Kyle Simpson",
+    "description": "A focused exploration of JavaScript fundamentals, scope, objects, async behavior, and language mechanics.",
+    "priceCents": 3499,
+    "coverImageUrl": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "book-006",
+    "sku": "BHV-006",
+    "title": "Domain-Driven Design",
+    "author": "Eric Evans",
+    "description": "A strategic and tactical approach to modeling complex business domains in software.",
+    "priceCents": 5799,
+    "coverImageUrl": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "book-007",
+    "sku": "BHV-007",
+    "title": "The Staff Engineer's Path",
+    "author": "Tanya Reilly",
+    "description": "Guidance for technical leadership, influence, systems thinking, and working beyond individual delivery.",
+    "priceCents": 3899,
+    "coverImageUrl": "https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "book-008",
+    "sku": "BHV-008",
+    "title": "Accelerate",
+    "author": "Nicole Forsgren, Jez Humble, and Gene Kim",
+    "description": "Research-backed practices for improving software delivery performance and organizational outcomes.",
+    "priceCents": 3299,
+    "coverImageUrl": "https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "book-009",
+    "sku": "BHV-009",
+    "title": "Effective TypeScript",
+    "author": "Dan Vanderkam",
+    "description": "Concrete techniques for using TypeScript's type system to write safer, clearer JavaScript applications.",
+    "priceCents": 4499,
+    "coverImageUrl": "https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": "book-010",
+    "sku": "BHV-010",
+    "title": "Building Microservices",
+    "author": "Sam Newman",
+    "description": "Practical advice for designing, evolving, deploying, and operating service-oriented systems.",
+    "priceCents": 4699,
+    "coverImageUrl": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=600&q=80"
+  }
+]

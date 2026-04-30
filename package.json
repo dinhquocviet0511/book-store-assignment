@@ -1,0 +1,20 @@
+{
+  "name": "bookhaven-assignment",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run start:dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "db:schema": "cd backend && npm run db:schema",
+    "db:seed": "cd backend && npm run db:seed",
+    "build": "npm run build --workspace backend && npm run build --workspace frontend",
+    "test": "npm test --workspace backend && npm test --workspace frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
