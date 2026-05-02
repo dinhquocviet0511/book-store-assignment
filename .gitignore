@@ -6,5 +6,11 @@ coverage
 .env.local
 .DS_Store
 npm-debug.log*
-plans
 .idea
+*.tsbuildinfo
+backend/prisma.config.js
+backend/prisma.config.js.map
+backend/prisma.config.d.ts
+backend/prisma/seed.js
+backend/prisma/seed.js.map
+backend/prisma/seed.d.ts

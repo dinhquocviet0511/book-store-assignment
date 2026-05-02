@@ -8,7 +8,7 @@ describe('BooksController', () => {
     } as unknown as BooksService;
     const controller = new BooksController(service);
 
-    await controller.findAll('12', 'typescript');
+    await controller.findAll({ limit: 12, search: 'typescript' });
 
     expect(service.findAll).toHaveBeenCalledWith({
       limit: 12,

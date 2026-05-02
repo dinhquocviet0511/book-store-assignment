@@ -1,5 +1,5 @@
 import { API_URL } from '@/constants/config';
-import type { Book } from '@/types/book';
+import { BookSchema, type Book } from '@/types/book';
 
 type FetchBooksOptions = {
   cache?: RequestCache;
@@ -7,6 +7,8 @@ type FetchBooksOptions = {
   search?: string;
   signal?: AbortSignal;
 };
+
+const BookListSchema = BookSchema.array();
 
 export async function fetchBooks({
   cache,
@@ -30,5 +32,6 @@ export async function fetchBooks({
     throw new Error('Failed to fetch books');
   }
 
-  return response.json() as Promise<Book[]>;
+  const data: unknown = await response.json();
+  return BookListSchema.parse(data);
 }

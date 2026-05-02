@@ -1,17 +1,26 @@
 import 'dotenv/config';
+import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
+import helmet from 'helmet';
 import { AppModule } from './app.module';
+import { env } from './config/env.schema';
 
 async function bootstrap(): Promise<void> {
   const app = await NestFactory.create(AppModule);
 
-  app.enableCors({
-    origin: process.env.FRONTEND_ORIGIN ?? 'http://localhost:3000',
-  });
+  app.use(helmet());
+  app.useGlobalPipes(
+    new ValidationPipe({
+      whitelist: true,
+      transform: true,
+      forbidNonWhitelisted: true,
+      transformOptions: { enableImplicitConversion: true },
+    }),
+  );
+  app.enableCors({ origin: env.FRONTEND_ORIGIN });
   app.enableShutdownHooks();
 
-  const port = Number(process.env.PORT ?? 3001);
-  await app.listen(port);
+  await app.listen(env.PORT);
 }
 
 void bootstrap();
